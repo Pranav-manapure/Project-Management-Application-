@@ -23,6 +23,63 @@ The **Project Management System** is a user-friendly web application designed to
 | **Validation**     | Custom Validation Logic |
 
 ---
+## Directory Structure
+
+```plaintext
+project-management-system/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           └── projectmanagement/
+│   │   │               ├── controller/
+│   │   │               │   ├── ProjectController.java
+│   │   │               │   ├── TaskController.java
+│   │   │               │   └── ResourceController.java
+│   │   │               ├── model/
+│   │   │               │   ├── Project.java
+│   │   │               │   ├── Task.java
+│   │   │               │   └── Resource.java
+│   │   │               ├── repository/
+│   │   │               │   ├── ProjectRepository.java
+│   │   │               │   ├── TaskRepository.java
+│   │   │               │   └── ResourceRepository.java
+│   │   │               ├── service/
+│   │   │               │   ├── ProjectService.java
+│   │   │               │   ├── TaskService.java
+│   │   │               │   └── ResourceService.java
+│   │   │               ├── validation/
+│   │   │               │   └── TaskAssignmentValidator.java
+│   │   │               └── ProjectManagementSystemApplication.java
+│   │   ├── resources/
+│   │   │   ├── static/
+│   │   │   │   ├── css/
+│   │   │   │   │   └── bootstrap.min.css
+│   │   │   ├── templates/
+│   │   │   │   ├── projects/
+│   │   │   │   │   ├── list.html
+│   │   │   │   │   ├── create.html
+│   │   │   │   │   └── update.html
+│   │   │   │   ├── tasks/
+│   │   │   │   │   ├── list.html
+│   │   │   │   │   ├── create.html
+│   │   │   │   │   └── update.html
+│   │   │   │   └── resources/
+│   │   │   │       ├── list.html
+│   │   │   │       ├── create.html
+│   │   │   │       └── update.html
+│   │   │   └── application.properties
+│   ├── test/
+│       ├── java/
+│       │   └── com/
+│       │       └── example/
+│       │           └── projectmanagement/
+│       │               └── ProjectManagementSystemApplicationTests.java
+├── pom.xml
+```
+
+---
 
 ## 🚀 Installation and Setup
 
@@ -58,8 +115,8 @@ The **Project Management System** is a user-friendly web application designed to
 
 ---
 
-## Endpoints
-### Projects
+## 🌐 Endpoints
+### 📁 Projects
 - **GET** `/projects`: List all projects.
 - **GET** `/projects/create`: View the project creation form.
 - **POST** `/projects`: Create a new project.
@@ -67,7 +124,7 @@ The **Project Management System** is a user-friendly web application designed to
 - **POST** `/projects/update`: Update an existing project.
 - **GET** `/projects/delete/{id}`: Delete a project.
 
-### Tasks
+### 📋 Tasks
 - **GET** `/tasks`: List all tasks.
 - **GET** `/tasks/create`: View the task creation form.
 - **POST** `/tasks`: Create a new task (with validation for resource allocation).
@@ -75,7 +132,7 @@ The **Project Management System** is a user-friendly web application designed to
 - **POST** `/tasks/update`: Update an existing task.
 - **GET** `/tasks/delete/{id}`: Delete a task.
 
-### Resources
+### 👤 Resources
 - **GET** `/resources`: List all resources.
 - **GET** `/resources/create`: View the resource creation form.
 - **POST** `/resources`: Create a new resource.
@@ -85,38 +142,38 @@ The **Project Management System** is a user-friendly web application designed to
 
 ---
 
-## Screenshots
-### Dashboard
+## 📸 Screenshots
+### 🖥️ Dashboard
 ![Dashboard Screenshot](screenshots/dashboard.png)
 
-### Project List
+### 📂 Project List
 ![Project List Screenshot](screenshots/project_list.png)
 
-### Task Creation Form
+### 📝 Task Creation Form
 ![Task Creation Form Screenshot](screenshots/task_creation.png)
 
-### Resource List
+### 👥 Resource List
 ![Resource List Screenshot](screenshots/resource_list.png)
 
 ---
 
-## Constraints
+## 🔒 Constraints
 - Each resource can be allocated to a maximum of **2 tasks per project**.
 - Only resources with a status of **Available** can be assigned to new tasks.
 
 ---
 
-## Validation Logic
+## 🔍 Validation Logic
 - Implemented in `TaskAssignmentValidator.java`.
 - Validates the number of tasks assigned to a resource within the same project.
 - Displays an error message on the task creation page if the limit is exceeded.
 
 ---
 
-### Author
+### 👨‍💻 Author
    Pranav Sanjay Manapure
-   - **Email:** manapurepranav03@gmail.com
-   - **LinkedIn:** www.linkedin.com/in/pranav-manapure
+   - **✉️ Email:** manapurepranav03@gmail.com
+   - **🌐 LinkedIn:** www.linkedin.com/in/pranav-manapure
 
 ---
 
