@@ -1,5 +1,3 @@
-# 🌟 Project Management System
-
 ## 📝 Overview
 The **Project Management System** is a user-friendly web application designed to manage projects, tasks, and resources efficiently. Built with **Spring Boot**, **Hibernate**, and **Thymeleaf**, it offers full **CRUD functionality** and ensures resources are not over-allocated (max **2 tasks per project**).
 
@@ -143,17 +141,30 @@ project-management-system/
 ---
 
 ## 📸 Screenshots
-### 🖥️ Dashboard
-![Dashboard Screenshot](screenshots/dashboard.png)
+### 🖥️ Database Tables Schema
+
+   ![image](https://github.com/user-attachments/assets/a2e23b09-37b4-4abc-be09-4c3d42549f8c)
 
 ### 📂 Project List
-![Project List Screenshot](screenshots/project_list.png)
+- Project List
+   ![image](https://github.com/user-attachments/assets/a18b1b99-4265-4912-bb8e-f98749824977)
 
-### 📝 Task Creation Form
-![Task Creation Form Screenshot](screenshots/task_creation.png)
+- Project Create
+   ![image](https://github.com/user-attachments/assets/4208d994-6310-492e-9a9a-4adc31f72944)
 
 ### 👥 Resource List
-![Resource List Screenshot](screenshots/resource_list.png)
+- Resource List
+   ![image](https://github.com/user-attachments/assets/4826782a-3525-41a0-90c1-1fc68c3d426c)
+
+- Resource Create
+   ![image](https://github.com/user-attachments/assets/37b4dda0-4719-4c24-8942-e7edf0eda5cf)
+
+### 📝 Task Creation Form
+- Task List
+   ![image](https://github.com/user-attachments/assets/56b20ae4-f089-4932-8b9d-701ebb309f28)
+  
+- Task Create
+   ![image](https://github.com/user-attachments/assets/5ad4e28e-80c3-47cc-b2ba-2af0ffc54f55)
 
 ---
 
